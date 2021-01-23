@@ -38,9 +38,8 @@ vagrant up
 - Clients: https://192.168.57.61:8501 etc.
 
 ##### Services
-- Counting http://192.168.57.61:9003/
-
 - Dashboard http://192.168.56.61:9002/
+- Counting http://192.168.57.61:9003/
 
 #### Apply license
 
