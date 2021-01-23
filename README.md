@@ -1,4 +1,4 @@
-## This repo contains a sample of Consul cluster in multi-datacenter deployment with mesh gateways for inter-datacenter communication. 
+## This repo contains a sample Vagrant project of Consul cluster in multi-datacenter deployment with mesh gateways for inter-datacenter communication. 
 
 #### The usage is pretty simple
 
@@ -50,8 +50,8 @@ consul license put @/vagrant/consul.hclic
 
 #### Secure Service Communication with Consul Service Mesh according to the following articles:
 
-https://learn.hashicorp.com/tutorials/consul/service-mesh-with-envoy-proxy
-https://learn.hashicorp.com/tutorials/consul/service-mesh-gateways
+- https://learn.hashicorp.com/tutorials/consul/service-mesh-with-envoy-proxy
+- https://learn.hashicorp.com/tutorials/consul/service-mesh-gateways
 
 ##### Consul UI
 <img src="screenshots/ConsulUI.png" />
