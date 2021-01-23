@@ -1,0 +1,40 @@
+ ########### Create Prepared Query 
+    curl -k \
+    --request POST \
+    --data \
+'{
+  "Name": "web",
+  "Service": {
+    "Service": "web",
+    "Failover": {
+      "NearestN": 2,
+      "Datacenters": ["dc1", "dc2"]
+    }
+  }
+}' https://127.0.0.1:8501/v1/query
+
+
+########### Read Prepared Query 
+curl -k https://127.0.0.1:8501/v1/query/4a8ac18b-54f2-2a38-c700-711b65bb5744 | jq
+
+
+########### Execute Prepared Query 
+curl -k \
+    https://127.0.0.1:8501/v1/query/4a8ac18b-54f2-2a38-c700-711b65bb5744/execute?near=_agent | jq
+
+
+########### Delete Prepared Query
+curl -k \
+    --request DELETE \
+    https://127.0.0.1:8501/v1/query/4a8ac18b-54f2-2a38-c700-711b65bb5744  | jq
+
+########### Explain Prepared Query 
+curl -k \
+    https://127.0.0.1:8501/v1/query/4a8ac18b-54f2-2a38-c700-711b65bb5744/explain | jq
+
+
+
+
+
+
+

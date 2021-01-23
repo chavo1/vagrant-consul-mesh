@@ -1,0 +1,16 @@
+.vagrant/
+pkg/
+consul_logs/
+test.sh
+token/
+vault_logs
+CA_cert.crt
+intermediate.cert.pem
+pki_intermediate.csr
+.DS_Store
+consul.hclic
+policy/*.txt
+acl
+proxy-counting.hcl
+proxy-defaults.hcl
+services_logs
